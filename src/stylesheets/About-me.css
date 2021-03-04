@@ -30,3 +30,16 @@
     font-weight: 300;
     letter-spacing: 3px;
 }
+
+.readmoreButton {
+    margin: auto;
+    text-align: center;
+    left: 47%;
+    top: 85%;
+    color: white;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}

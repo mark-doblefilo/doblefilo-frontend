@@ -5,9 +5,18 @@ import background from '../images/me.jpg';
 
 export default class AboutMe extends React.Component {
     render(){
+        function handleScroll() {
+            window.scroll({
+                top: 1000,
+                left: 0,
+                behavior: 'smooth',
+            })
+        }
+
         return <div className="image" style={{ backgroundImage: `url(${background})` }}>
             <div className="nameText">{data.name}</div>
             <div className="descriptionText">{data.description}</div>
+            <button type="button" className="readmoreButton" onClick={handleScroll}>Read more</button>
         </div>
     }
 }
