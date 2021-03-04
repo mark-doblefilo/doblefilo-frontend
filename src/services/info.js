@@ -1,4 +1,4 @@
 export const data = {
-    name: "Marc Rodriguez",
+    name: "MARC RODRIGUEZ",
     description: "Student of computer engineering. In love with cats and code",
 }
