@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+        doblefilo-frontend-prod:
+                container_name: doblefilo_frontend-prod
+                build:
+                        context: .
+                        dockerfile: Dockerfile.prod
+                ports:
+                        - '1337:80'
