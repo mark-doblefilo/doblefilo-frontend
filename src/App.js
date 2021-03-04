@@ -1,14 +1,12 @@
 import './App.css';
 import React from 'react';
-import {data} from './services/info';
+import AboutMe from './components/about-me';
 
 function App() {
-  const name = data.name;
-
-
   return (
       <div>
-          <h1>{name}</h1> 
+        <AboutMe/>
+        <h1>:)</h1> 
       </div>
   ); 
 }
