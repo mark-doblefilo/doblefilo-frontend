@@ -1,8 +1,11 @@
 h3 {
     padding-top: 40px;
-    padding-left: 21%;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100vw;
     font-weight: 400;
+    text-align: center;
 }
 
 table {
@@ -19,8 +22,8 @@ th {
 td {
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 10px;
+    padding-left: 10px;
     text-align: left;
     font-weight: 300;
     position: relative;
@@ -31,8 +34,12 @@ td {
     max-width: 700px;
 }
 
+.stars {
+    text-align: center;
+}
+
 hr {
-    width: 650%;
+    width: 630%;
     border-radius: 25%;
     opacity: 50%;
 }

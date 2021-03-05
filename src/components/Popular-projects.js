@@ -43,7 +43,7 @@ export default class PopularProjects extends React.Component {
                             <td>{item.name}</td>
                             <td className="descr">{item.description}</td>
                             <td>{item.language}</td>
-                            <td>{item.stargazers_count}</td>
+                            <td className="stars">{item.stargazers_count}</td>
                         </tr>
                     ))}
             </table>
