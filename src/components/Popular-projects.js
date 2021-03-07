@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import { isTemplateSpan } from 'typescript';
-import {data} from '../services/info';
+import React from 'react';
 import '../stylesheets/Popular-projects.css';
 
 export default class PopularProjects extends React.Component {
@@ -8,24 +6,21 @@ export default class PopularProjects extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-          repos: [],
+            repos: [],
         };
       }
     
     async componentDidMount() {
-        fetch('https://api.github.com/users/mark-doblefilo/repos?sort=stargazers&order=desc&per_page=3&type=owner')
-        .then(res => res.json())
-        .then(
-            (result) => {
-                this.setState({
-                    repos: result,
-                })
-            }
-        )
+        const response = await fetch('http://localhost:5000/api/projects', {
+            method: 'GET',
+            dataType: 'json'
+        });
+        const json = await response.json();
+        this.setState({ repos: json});
       }
 
     render() {
-        const { repos } = this.state;
+        const { repos, isFetching } = this.state;
 
         return <div>
             <h3>Popular Projects</h3>
@@ -43,7 +38,7 @@ export default class PopularProjects extends React.Component {
                             <td>{item.name}</td>
                             <td className="descr">{item.description}</td>
                             <td>{item.language}</td>
-                            <td className="stars">{item.stargazers_count}</td>
+                            <td className="stars">{item.stars}</td>
                         </tr>
                     ))}
             </table>

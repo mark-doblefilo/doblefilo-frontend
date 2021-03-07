@@ -31,7 +31,8 @@ td {
 }
 
 .descr {
-    max-width: 700px;
+    max-width: 650px;
+    width: 650px;
 }
 
 .stars {
