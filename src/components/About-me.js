@@ -6,11 +6,7 @@ import background from '../images/me.jpg';
 export default class AboutMe extends React.Component {
     render(){
         function handleScroll() {
-            window.scroll({
-                top: 1000,
-                left: 0,
-                behavior: 'smooth',
-            })
+            document.getElementById('Popularprojects').scrollIntoView({behavior: 'smooth'})
         }
 
         return <div className="image" style={{ backgroundImage: `url(${background})` }}>
