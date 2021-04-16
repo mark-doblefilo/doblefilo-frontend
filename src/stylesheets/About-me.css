@@ -35,9 +35,9 @@
     margin: auto;
     text-align: center;
     left: 47%;
-    top: 85%;
+    top: 90%;
     color: white;
-    position: relative;
+    position: absolute;
     background: none;
     border: none;
     cursor: pointer;

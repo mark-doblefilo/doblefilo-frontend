@@ -20,7 +20,7 @@ export default class PopularProjects extends React.Component {
       }
 
     render() {
-        const { repos, isFetching } = this.state;
+        const { repos } = this.state;
 
         return <div>
             <h3>Popular Projects</h3>
@@ -35,7 +35,7 @@ export default class PopularProjects extends React.Component {
                 <hr></hr>
                     {repos.map(item => (
                         <tr>
-                            <td>{item.name}</td>
+                            <td className="name">{item.name}</td>
                             <td className="descr">{item.description}</td>
                             <td>{item.language}</td>
                             <td className="stars">{item.stars}</td>

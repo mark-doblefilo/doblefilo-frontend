@@ -30,6 +30,13 @@ td {
     margin: auto;
 }
 
+.name {
+    max-width: 250px;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .descr {
     max-width: 650px;
     width: 650px;
@@ -40,7 +47,7 @@ td {
 }
 
 hr {
-    width: 640%;
+    width: 410%;
     border-radius: 25%;
     opacity: rgba(0,0,0,0.5);
 }
