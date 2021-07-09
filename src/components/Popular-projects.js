@@ -11,9 +11,9 @@ export default class PopularProjects extends React.Component {
       }
     
     async componentDidMount() {
-        const response = await fetch('http://localhost:5000/api/popularprojects', {
+        const response = await fetch('http://localhost:8081/projects', {
             method: 'GET',
-            dataType: 'json'
+            headers: new Headers({'Content-Type': 'application/json'})
         });
         const json = await response.json();
         this.setState({ repos: json});
