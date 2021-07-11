@@ -8,24 +8,6 @@ function App() {
       <div>
         <AboutMe/>
         <PopularProjects/>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
-        <h1>:D</h1>
       </div>
   ); 
 }
